@@ -50,4 +50,25 @@ let isAuthenticated  = true;
 
 let authenticationStatus = isAuthenticated ? "Authenticated" : "Not authenticated";
 
-console.log("Authentication Status:",authenticationStatus)
+console.log("Authentication Status:",authenticationStatus);
+
+
+//Practical Task
+
+let person = "employee";
+let message;
+
+switch(person){
+    case "employee":
+        console.log("You are an Employee of the Dietary Service");
+        break;
+    case "enrolled-member":
+        console.log("You are Enrollrd Member of Dietary Services ");
+        break;
+    case 'subscriber':
+        console.log("You are a subscriber of this Dietary Services");
+        break;
+    default:
+        console.log("You are not a Subscriber , please Subscribe first");
+
+}
