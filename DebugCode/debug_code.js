@@ -1,9 +1,11 @@
 function performOperation(){
     let num1 = parseInt(document.getElementById('input1').value);
     let num2 = parseInt(document.getElementById('input2').value);
+    let operation = document.getElementById('operation').value;
 
     if(!isNaN(num1) && !isNaN(num2)){
-        let result = multiply(num1,num2);
+        let result = perform_arithmetic_operation(num1,num2,operation);
+
 
         displayResult((result));
     }else{
@@ -12,10 +14,26 @@ function performOperation(){
     }
 }
 
-function multiply(a,b){
-    debugger;
+function perform_arithmetic_operation(num1,num2,operation){
+    ;
 
-    return a*b;
+    if(operation == '+'){
+        debugger;
+        return num1 + num2;
+    }else if(operation == '-'){
+        debugger;
+        return num1 - num2;
+    }else if(operation =='*'){
+        debugger;
+        return num1 * num2;
+    }else if( operation == '/'){
+        debugger;
+        return num1 / num2;
+        
+    }
+
+    
+    
 }
 
 function displayResult(result){
